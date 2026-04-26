@@ -1,36 +1,18 @@
 """
-Main entry point for Advanced Banking Knowledge System
+Advanced Banking Knowledge System — Fast Edition
+Run: streamlit run ui/streamlit_app.py
+Or:  python main.py
 """
-
-import sys
 import subprocess
+import sys
+import os
 
-def main():
-    """Run the Streamlit application"""
-    
-    print("""
+print("""
 ╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║     🏦 ADVANCED BANKING KNOWLEDGE SYSTEM 🏦                     ║
-║                                                                  ║
-║  GraphRAG + Vector Search + RAFT Intelligent Fusion             ║
-║                                                                  ║
-║  Portfolio Project #3 - Week 3 Complete                         ║
-║                                                                  ║
+║   🏦 ADVANCED BANKING KNOWLEDGE SYSTEM — FAST EDITION           ║
+║   Vector Search + Streaming · ~1-3s response time               ║
 ╚══════════════════════════════════════════════════════════════════╝
-    """)
-    
-    print("\n🚀 Starting Streamlit application...\n")
-    
-    # Run Streamlit
-    subprocess.run([
-        sys.executable,
-        "-m",
-        "streamlit",
-        "run",
-        "ui/streamlit_app.py",
-        "--server.port=8501"
-    ])
+""")
 
-if __name__ == "__main__":
-    main()
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+subprocess.run([sys.executable, "-m", "streamlit", "run", "ui/streamlit_app.py"])
