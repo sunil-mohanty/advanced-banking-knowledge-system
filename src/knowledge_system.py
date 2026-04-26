@@ -7,7 +7,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from retriever_fusion import RetrieverFusion
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from retriever_fusion import RetrieverFusion
 from typing import List, Dict
 import time
 import json
