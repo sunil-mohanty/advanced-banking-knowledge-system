@@ -23,3 +23,5 @@ This system implements cutting-edge retrieval techniques to answer complex banki
 
 ---
 
+Run : $python main.py
+
